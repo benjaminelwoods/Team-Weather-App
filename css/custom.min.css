@@ -1,0 +1,141 @@
+.parent,body{height:100vh;display:flex}*{padding:0;margin:0}body{justify-content:start;background-color:#efefef;font-family:Montserrat,sans-serif}.row{text-align:center;margin-bottom:5px}.parent{width:100%;justify-content:start}.weather-widget{padding:20px 0;box-shadow:0 2px 5px 0 rgba(0,0,0,.3);display:flex;flex-flow:column wrap;justify-content:center;justify-items:center;background-color:#181818;color:#fff;width:25%}.temp-c{margin-bottom:20px}.location-country{color:#c2c2c2;font-weight:300}.weather-forecast{width:75%}.forecast-item{display:flex;justify-content:space-between;border-bottom:1px solid #e1e1e1;padding:20px;transition:all .2s}.forecast-item:hover{background-color:#fff;cursor:pointer}.forecast-item h6{color:#888;margin-top:5px}.forecast{text-align:right}@media only screen and (max-width:600px){body{flex-flow:column}.weather-forecast,.weather-widget{width:100%}.temp-c{margin-bottom:7px}}@keyframes rotation{from{transform:rotate(0)}to{transform:rotate(359deg)}}
+
+.condition {
+  text-transform: capitalize;
+}
+
+.forecast {
+  width: 15%;
+}
+
+.icon-container img {
+  max-width: 60px;
+  min-height: 60px;
+}
+
+.day h6 {
+  font-size: 17px;
+}
+
+.forecast h6 {
+  font-size: 20px;
+}
+
+.icon-container {
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.icon-container h4 {
+  font-size: 24px;
+}
+
+body, #app {
+  overflow-x: hidden;
+}
+
+img {
+  animation: opacityOnLoad 0.4s ease;
+}
+
+@keyframes opacityOnLoad {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.weather-widget {
+  animation: onLoad4 0.8s ease;
+}
+
+.weather-forecast > :nth-child(1){
+  animation: onLoad 0.8s ease;
+}
+
+.weather-forecast > :nth-child(2){
+  animation: onLoad 0.8s ease;
+  animation-delay: 0.2s;
+  transform: translateY(-100vh);
+  animation-fill-mode: forwards;
+}
+
+.weather-forecast > :nth-child(3){
+  animation: onLoad 0.8s ease;
+  animation-delay: 0.4s;
+  transform: translateY(-100vh);
+  animation-fill-mode: forwards;
+}
+
+.weather-forecast > :nth-child(4){
+  animation: onLoad 0.8s ease;
+  animation-delay: 0.6s;
+  transform: translateY(-100vh);
+  animation-fill-mode: forwards;
+}
+
+.weather-forecast > :nth-child(5){
+  animation: onLoad 0.8s ease;
+  animation-delay: 0.8s;
+  transform: translateY(-100vh);
+  animation-fill-mode: forwards;
+}
+
+.weather-forecast > :nth-child(6){
+  animation: onLoad 0.8s ease;
+  animation-delay: 1s;
+  transform: translateY(-100vh);
+  animation-fill-mode: forwards;
+}
+
+.weather-forecast > :nth-child(7){
+  animation: onLoad 0.8s ease;
+  animation-delay: 1.2s;
+  transform: translateY(-100vh);
+  animation-fill-mode: forwards;
+}
+
+@keyframes onLoad4 {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0vh);
+  }
+}
+
+@keyframes onLoad {
+  0% {
+    opacity: 0;
+    transform: translateX(100vw);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes onLoad2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes onLoad3 {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
