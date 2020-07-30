@@ -134,7 +134,7 @@ button {
 body, #app {
   overflow-x: hidden;
 }
-
+/*
 img {
   animation: opacityOnLoad 0.4s ease;
 }

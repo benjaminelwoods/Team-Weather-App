@@ -132,4 +132,22 @@
 
     makeAjaxRequest();
 
+
+
 }()); // iffe function ENDS
+
+
+var masterObj = {
+  days: ['day0','day1','day2','day3','day4','day5','day6','day7'],
+  temp: ['temp0','temp1','temp2','temp3','temp4','temp5','temp6'],
+  icon: ['icon0','icon1','icon2','icon3','icon4','icon5','icon6'],
+  cond: ['cond0','cond1','cond2','cond3','cond4','cond5','cond6']
+}
+
+
+temp0 = masterObj.day
+
+forecastItem1.onclick = function () {
+  day = day1.value
+   newFUnction ()
+}

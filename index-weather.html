@@ -27,10 +27,11 @@
 	<div class="parent" id="app">
 
 		<!-- Weather UI HTML -->
-		<div class="weather-widget">
+		<div class="weather-widget" id="overviewPanel">
 		  <div class="weather-icon row">
-				<img v-bind:src="icons[0]" alt="">
+				<img id="icon0" v-bind:src="icons[0]" alt="">
 		  </div>
+<<<<<<< HEAD
 		  <h1 class="temp-c row">{{weather.data.daily[0].temp.day.toFixed(0)}}°C</h1>
 		  <h5 class="condition row">{{weather.data.daily[0].weather[0].description}}</h5>
 			<div v-if="location">
@@ -38,104 +39,119 @@
 		  	<!-- <h5 class="location-country row">{{location.data.features[5].text}}</h5> -->
 			</div>
 			<h4 class="day row">{{days[0] + ', ' + dates[0]}}</h4>
+=======
+			<!-- Id's added to Panel, temp, icon, condition and day  -->
+		  <h1 class="temp-c row" id="temp0">{{weather.data.daily[0].temp.day.toFixed(0)}}°C</h1>
+		  <h5 class="condition row" id="cond0">{{weather.data.daily[0].weather[0].description}}</h5>
+		  <h3 class="location-name row">{{location.data.features[2].text + ', ' + location.data.features[3].text}}</h3>
+		  <h5 class="location-country row">{{location.data.features[5].text}}</h5>
+			<h4 class="day row" id="day0">{{days[0] + ', ' + dates[0]}}</h4>
+>>>>>>> overviewPanelUpdate
 		</div>
-		<div class="weather-forecast">
 
-		  <div class="forecast-item">
+		<!-- Id's added to forcastItem, temp, icon, condition and day  -->
+		<div class="weather-forecast">
+		  <div class="forecast-item" id="forcastItem1">
 		    <div class="day">
 		      <h4>Tomorrow</h4>
-		      <h6>{{dates[1]}}</h6>
+		      <h6 id="day1">{{dates[1]}}</h6>
 		    </div>
 		    <div class="forecast">
 					<div class="icon-container">
-		      	<img v-bind:src="icons[1]" alt="">
-						<h4>{{weather.data.daily[1].temp.day.toFixed(0)}}°C</h4>
+		      	<img id="icon1" v-bind:src="icons[1]" alt="">
+						<h4 id="temp1">{{weather.data.daily[1].temp.day.toFixed(0)}}°C</h4>
 					</div>
-		      <h6 class="condition">{{weather.data.daily[1].weather[0].description}}</h6>
+		      <h6 id="cond1" class="condition">{{weather.data.daily[1].weather[0].description}}</h6>
 		    </div>
 		  </div>
 
-		  <div class="forecast-item">
+			<!-- Id's added to forcastItem, temp, icon, condition and day  -->
+		  <div class="forecast-item" id="forcastItem2">
 		    <div class="day">
-		      <h4>{{days[2]}}</h4>
-		      <h6>{{dates[2]}}</h6>
+		      <h4 id="day2">{{days[2]}}</h4>
+		      <h6 id="day2">{{dates[2]}}</h6>
 		    </div>
 		    <div class="forecast">
 					<div class="icon-container">
-		      	<img v-bind:src="icons[2]" alt="">
-						<h4>{{weather.data.daily[2].temp.day.toFixed(0)}}°C</h4>
+		      	<img id="icon2" v-bind:src="icons[2]" alt="">
+						<h4 id="temp2">{{weather.data.daily[2].temp.day.toFixed(0)}}°C</h4>
 					</div>
-		      <h6 class="condition">{{weather.data.daily[2].weather[0].description}}</h6>
+		      <h6 id="cond2" class="condition">{{weather.data.daily[2].weather[0].description}}</h6>
 		    </div>
 		  </div>
 
-		  <div class="forecast-item">
+		<!-- Id's added to forcastItem, temp, icon, condition and day  -->
+		  <div class="forecast-item" id="forcastItem3">
 		    <div class="day">
-		      <h4>{{days[3]}}</h4>
-		      <h6>{{dates[3]}}</h6>
+		      <h4 id="day3">{{days[3]}}</h4>
+		      <h6 id="day3">{{dates[3]}}</h6>
 		    </div>
 		    <div class="forecast">
 					<div class="icon-container">
-		      	<img v-bind:src="icons[3]" alt="">
-						<h4>{{weather.data.daily[3].temp.day.toFixed(0)}}°C</h4>
+		      	<img id="icon3" v-bind:src="icons[3]" alt="">
+						<h4 id="temp3">{{weather.data.daily[3].temp.day.toFixed(0)}}°C</h4>
 					</div>
-		      <h6 class="condition">{{weather.data.daily[3].weather[0].description}}</h6>
+		      <h6 id="cond3" class="condition">{{weather.data.daily[3].weather[0].description}}</h6>
 		    </div>
 		  </div>
 
-		  <div class="forecast-item">
+		<!-- Id's added to forcastItem, temp, icon, condition and day  -->
+		  <div class="forecast-item" id="forcastItem4">
 		    <div class="day">
-		      <h4>{{days[4]}}</h4>
-		      <h6>{{dates[4]}}</h6>
+		      <h4 id="day4">{{days[4]}}</h4>
+		      <h6 id="day4">{{dates[4]}}</h6>
 		    </div>
 		    <div class="forecast">
 					<div class="icon-container">
-		      	<img v-bind:src="icons[4]" alt="">
-						<h4>{{weather.data.daily[4].temp.day.toFixed(0)}}°C</h4>
+		      	<img id="icon4" v-bind:src="icons[4]" alt="">
+						<h4 id="temp4">{{weather.data.daily[4].temp.day.toFixed(0)}}°C</h4>
 					</div>
-		      <h6 class="condition">{{weather.data.daily[4].weather[0].description}}</h6>
+		      <h6 id="cond4" class="condition">{{weather.data.daily[4].weather[0].description}}</h6>
 		    </div>
 		  </div>
 
-		  <div class="forecast-item">
+		<!-- Id's added to forcastItem, temp, icon, condition and day  -->
+		  <div class="forecast-item" id="forcastItem5">
 		    <div class="day">
-		      <h4>{{days[5]}}</h4>
-		      <h6>{{dates[5]}}</h6>
+		      <h4 id="day5">{{days[5]}}</h4>
+		      <h6 id="day5">{{dates[5]}}</h6>
 		    </div>
 		    <div class="forecast">
 					<div class="icon-container">
-		      	<img v-bind:src="icons[5]" alt="">
-						<h4>{{weather.data.daily[5].temp.day.toFixed(0)}}°C</h4>
+		      	<img id="icon5" v-bind:src="icons[5]" alt="">
+						<h4 id="temp5">{{weather.data.daily[5].temp.day.toFixed(0)}}°C</h4>
 					</div>
-		      <h6 class="condition">{{weather.data.daily[5].weather[0].description}}</h6>
+		      <h6 id="cond5" class="condition">{{weather.data.daily[5].weather[0].description}}</h6>
 		    </div>
 		  </div>
 
-		  <div class="forecast-item">
+		<!-- Id's added to forcastItem, temp, icon, condition and day  -->
+		  <div class="forecast-item" id="forcastItem6">
 		    <div class="day">
-		      <h4>{{days[6]}}</h4>
-		      <h6>{{dates[6]}}</h6>
+		      <h4 id="day6">{{days[6]}}</h4>
+		      <h6 id="day6">{{dates[6]}}</h6>
 		    </div>
 		    <div class="forecast">
 					<div class="icon-container">
-		      	<img v-bind:src="icons[6]" alt="">
-						<h4>{{weather.data.daily[6].temp.day.toFixed(0)}}°C</h4>
+		      	<img id="icon6" v-bind:src="icons[6]" alt="">
+						<h4 id="temp6">{{weather.data.daily[6].temp.day.toFixed(0)}}°C</h4>
 					</div>
-		      <h6 class="condition">{{weather.data.daily[6].weather[0].description}}</h6>
+		      <h6 id="cond6" class="condition">{{weather.data.daily[6].weather[0].description}}</h6>
 		    </div>
 		  </div>
 
-		  <div class="forecast-item">
+				<!-- Id's added to forcastItem, temp, icon, condition and day  -->
+		  <div class="forecast-item" id="forcastItem7">
 		    <div class="day">
-		      <h4>{{days[7]}}</h4>
-		      <h6>{{dates[7]}}</h6>
+		      <h4 id="day7">{{days[7]}}</h4>
+		      <h6 id="day7">{{dates[7]}}</h6>
 		    </div>
 		    <div class="forecast">
 					<div class="icon-container">
-						<img v-bind:src="icons[7]" alt="">
-						<h4>{{weather.data.daily[7].temp.day.toFixed(0)}}°C</h4>
+						<img id="icon7" v-bind:src="icons[7]" alt="">
+						<h4 id="temp7">{{weather.data.daily[7].temp.day.toFixed(0)}}°C</h4>
 					</div>
-		      <h6 class="condition">{{weather.data.daily[7].weather[0].description}}</h6>
+		      <h6 id="cond7" class="condition">{{weather.data.daily[7].weather[0].description}}</h6>
 		    </div>
 		  </div>
 
